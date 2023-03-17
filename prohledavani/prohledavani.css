@@ -1,0 +1,60 @@
+/** @format */
+
+body {
+    /* height: 100vh; */
+    background-color: #3a3a3a;
+    font-family: system-ui, sans-serif;
+    padding: 2rem 2rem;
+
+    margin: 0 auto;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+h1 {
+    color: gray;
+    font-weight: 300;
+}
+input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+input::placeholder {
+    font-size: 1.5rem;
+}
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+ul {
+    width: 15%;
+    background-color: #2b2b2b;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+li {
+    border-radius: 5px;
+    list-style-type: none;
+    color: white;
+    background-color: #3a3a3a;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+.liBreak {
+    margin-bottom: 1rem;
+}
+.liSPZ {
+    color: lightgreen;
+    font-weight: 600;
+}
+span {
+    display: block;
+    color: lightcoral;
+    font-weight: 600;
+}

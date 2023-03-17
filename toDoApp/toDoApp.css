@@ -1,0 +1,148 @@
+/** @format */
+
+/* * {
+    outline: 1px solid rgb(0, 85, 255);
+} */
+body {
+    /* height: 100vh; */
+    background-color: #3a3a3a;
+    font-family: system-ui, sans-serif;
+    padding: 2rem 2rem;
+    width: 80vw;
+    margin: 0 auto;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.639);
+    max-width: 60rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+h1,
+h2 {
+    margin: 0 auto;
+    width: fit-content;
+    color: #3a3a3a;
+    background-color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+}
+h2 {
+    background-color: #89c8ff;
+    margin-top: 1rem;
+}
+
+span {
+    font-weight: 900;
+    margin-left: 1rem;
+}
+
+.nesplneno {
+    color: red;
+}
+
+.splneno {
+    color: green;
+}
+
+ul {
+    padding: 0.5rem 0.2rem;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 1rem;
+    box-shadow: 1px 2px 5px #000000a0;
+    max-width: 200px;
+    min-width: 200px;
+    width: 100%;
+}
+
+ul li:first-child {
+    background-color: #525252;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid rgb(55, 55, 55);
+}
+
+.main li:last-child,
+.false li:last-child,
+.true li:last-child {
+    margin-bottom: 0;
+}
+
+.main {
+    background-color: #3a3a3a;
+}
+
+.false {
+    background-color: #ff6f00;
+}
+.true {
+    background-color: #89c8ff;
+}
+
+.main li,
+.false li,
+.true li {
+    background-color: #303030;
+    font-size: 1.2rem;
+    font-weight: 600;
+    list-style-type: none;
+    color: #89c8ff;
+    padding: 0.2rem 1rem;
+    border-radius: 10%;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 1px 2px black;
+    cursor: default;
+    user-select: none;
+}
+
+.false li,
+.true li {
+    transition: color, transform ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.false li:hover:not(.false li:first-child) {
+    color: lightcoral;
+    transform: translateX(5px);
+}
+
+.true li:hover:not(.true li:first-child) {
+    color: lightcoral;
+    transform: translateX(-5px);
+}
+
+.false li:active:not(.main li:first-child),
+.true li:active:not(.main li:first-child) {
+    color: #ff0000;
+    transform: scale(0.98);
+}
+.false .header {
+    color: orange;
+}
+.main .seznam {
+    color: lightgreen;
+}
+
+.bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+.bottom a {
+    margin-left: 1rem;
+    text-align: left;
+    background-color: #525252;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all ease-in-out 0.1s;
+}
+.bottom a:active {
+    background-color: #4a4a4a;
+    color: rgb(158, 158, 158);
+    transform: scale(0.95);
+}
